@@ -4,6 +4,7 @@
   --mainGrey: #afaa9b;
   --mainWhite: #fff;
   --mainDark: #222;
+  --secondYellow: rgba(244, 244, 123, 0.722);
 }
 
 body {
@@ -25,4 +26,15 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
   color: var(--mainBrown);
   font-size: 2rem;
+}
+
+.default-background {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: linear-gradient(to bottom rgba(226, 218, 180, 0.5), rgba(100, 91, 43, 0.5));
+  /* background: black; */
+  background-position: center;
+  background-size: cover;  
 }

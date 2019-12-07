@@ -1,17 +1,38 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql, StaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { FaGulp } from "react-icons/fa";
+import SEO from "../components/seo";
+import BackgroundSection from "../components/globals/BackgroundSection";
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <FaGulp />
-  </Layout>
+
+const IndexPage = ({ data }) => (
+  <div>
+    <Layout>
+      <SEO title="Home" keywords={`gatsby`, `application`} />
+      {/* <BackgroundSection backgroundImage = {data.backgroundImage.childImageSharp.fluid} 
+      title="art scratch" 
+      styleClass="default-background"
+     /> */}
+      <BackgroundSection
+        img={data.img.childImageSharp.fluid}
+        title="Art Scratch"
+        styleClass="default-background"
+      />
+    </Layout>
+  </div>
 )
+
+export const query = graphql`
+  {
+    img: file(relativePath: { eq: "background.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+  }
+`
 
 export default IndexPage
