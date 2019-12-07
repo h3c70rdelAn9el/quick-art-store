@@ -4,6 +4,7 @@ import { Link, graphql, StaticQuery } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo";
 import BackgroundSection from "../components/globals/BackgroundSection";
+import Info from "../components/home/info";
 
 
 const IndexPage = ({ data }) => (
@@ -19,6 +20,7 @@ const IndexPage = ({ data }) => (
         title="Art Scratch"
         styleClass="default-background"
       />
+      <Info />
     </Layout>
   </div>
 )

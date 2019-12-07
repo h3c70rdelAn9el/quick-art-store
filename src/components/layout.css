@@ -33,8 +33,24 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: linear-gradient(to bottom rgba(226, 218, 180, 0.5), rgba(100, 91, 43, 0.5));
+  background-color: linear-gradient(to bottom rgba(70, 80, 226, 0.5), rgba(100, 91, 43, 0.5));
   /* background: black; */
   background-position: center;
   background-size: cover;  
+}
+
+.btn {
+  border-radius: 30px;
+  box-shadow: 5px 10px 10px var(--mainBrown) ;
+}
+
+.btn-yellow {
+  background-color: var(--mainYellow) ;
+  
+}
+
+.btn-yellow:hover {
+  background-color: var(--mainBrown);
+  transition: all .3s ease-in;
+  color: var(--mainYellow);
 }
