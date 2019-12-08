@@ -34,9 +34,39 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: center;
   background-color: linear-gradient(to bottom rgba(70, 80, 226, 0.5), rgba(100, 91, 43, 0.5));
-  /* background: black; */
   background-position: center;
-  background-size: cover;  
+  background-size: cover; 
+  z-index: -1;
+}
+
+.image-container {
+  opacity: .7;
+}
+
+
+/* .overlay {
+  opacity: .5;
+  z-index: -1;
+  position: relative;
+  width: 100%;
+
+} */
+
+
+/* .title {
+  color: var(--mainBrown);
+
+  position: absolute;
+  z-index: 1;
+} */
+
+.head-title {
+  color: black;
+  position: absolute;
+  top: 68%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 .btn {
