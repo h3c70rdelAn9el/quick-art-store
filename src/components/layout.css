@@ -28,7 +28,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 2rem;
 }
 
-.default-background {
+.default-background,
+.about-background {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -78,4 +79,10 @@ h1, h2, h3, h4, h5, h6 {
 .footer {
   background-color: var(--mainDark);
   color: var(--mainYellow);
+}
+
+.about-background {
+  min-height: 70vh;
+  background-color: lightgray;
+  color: black;
 }
