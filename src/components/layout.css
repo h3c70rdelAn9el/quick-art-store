@@ -51,30 +51,12 @@ h1, h2, h3, h4, h5, h6 {
   opacity: .5;
 }
 
-/* .overlay {
-  opacity: .5;
-  z-index: -1;
-  position: relative;
-  width: 100%;
-
-} */
-
-
-/* .title {
-  color: var(--mainBrown);
-
-  position: absolute;
-  z-index: 1;
-} */
-
 .head-title {
-  /* color: rgb(33, 112, 157); */
   color: white;
   position: absolute;
   top: 68%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* z-index: 5; */
 }
 
 .btn {
@@ -90,5 +72,10 @@ h1, h2, h3, h4, h5, h6 {
 .btn-yellow:hover {
   background-color: var(--mainBrown);
   transition: all .3s ease-in;
+  color: var(--mainYellow);
+}
+
+.footer {
+  background-color: var(--mainDark);
   color: var(--mainYellow);
 }
