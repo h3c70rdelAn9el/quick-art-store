@@ -76,13 +76,18 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--mainYellow);
 }
 
-.footer {
-  background-color: var(--mainDark);
-  color: var(--mainYellow);
-}
-
 .about-background {
   min-height: 70vh;
   background-color: lightgray;
   color: black;
+}
+
+.showcase {
+  background-color: var(--mainGrey);
+}
+
+
+.footer {
+  background-color: var(--mainDark);
+  color: var(--mainYellow);
 }

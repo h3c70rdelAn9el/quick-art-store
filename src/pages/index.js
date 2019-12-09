@@ -5,6 +5,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo";
 import BackgroundSection from "../components/globals/BackgroundSection";
 import Info from "../components/home/info";
+import Showcase from "../components/home/Showcase";
+
 
 
 const IndexPage = ({ data }) => (
@@ -21,6 +23,7 @@ const IndexPage = ({ data }) => (
         styleClass="default-background"
       />
       <Info />
+      <Showcase items={data.paintings} />
     </Layout>
   </div>
 )
@@ -34,6 +37,24 @@ export const query = graphql`
         }
       }
     }
+    paintings:allContentfulArtPainting {
+    edges{
+      node{
+        id
+        title
+        description{
+          description
+        }
+        price
+        category
+        image{
+					fixed(width: 50, height: 50){
+            ...GatsbyContentfulFixed_tracedSVG
+          }
+        }
+      }
+    }
+  }
   }
 `
 
