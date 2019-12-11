@@ -1,5 +1,6 @@
 :root {
   --mainBrown: #8b751d;
+  --secondBrown: #c4b781;
   --mainYellow: #f4f47b;
   --mainGrey: #afaa9b;
   --mainWhite: #fff;
@@ -86,6 +87,11 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--mainGrey);
 }
 
+.customs {
+  text-align: center;
+  justify-content: center;
+  background-color: var(--secondBrown);
+}
 
 .footer {
   background-color: var(--mainDark);

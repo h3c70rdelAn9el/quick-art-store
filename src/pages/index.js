@@ -6,6 +6,7 @@ import SEO from "../components/seo";
 import BackgroundSection from "../components/globals/BackgroundSection";
 import Info from "../components/home/info";
 import Showcase from "../components/home/Showcase";
+import Services from "../components/home/Services";
 
 
 
@@ -24,6 +25,7 @@ const IndexPage = ({ data }) => (
       />
       <Info />
       <Showcase items={data.paintings} />
+      <Services />
     </Layout>
   </div>
 )
