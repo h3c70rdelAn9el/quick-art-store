@@ -10,7 +10,16 @@ export default function Service({ service }) {
         <div className="card-body text-center">
           <h6>{service.title}</h6>
           <h6>${service.price}.</h6>
-          <button className="btn btn-yellow mt-3 text-capitalize">Purchase</button>
+          <button 
+            className="btn btn-yellow mt-3 text-capitalize snipcart-add-item"
+              data-item-id = {service.id}
+              data-item-name = {service.title}
+              data-item-price = {service.price}
+              data-item-image = {service.image.fixed.src}
+              // data-item-url = "http://myapp.com/products/bacon"
+               
+          
+          >Purchase</button>
         </div>
       </div>
     </div>
