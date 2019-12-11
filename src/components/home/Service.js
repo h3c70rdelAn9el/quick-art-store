@@ -4,9 +4,9 @@ import Img from 'gatsby-image';
 export default function Service({ service }) {
   return (
     <div className="col-10 col-sm-8 col-md-6 col-lg-4 mx-auto">
-      <div className="card customs" style={{ maxHeight: "70%" }}>
+      <div className="card customs mb-4" style={{ maxHeight: "100%" }}>
         {/* <Img fluid={service.image.fluid} className="card-img-top" /> */}
-        <Img fixed={service.image.fixed} className="card-img-top" />
+        <Img fixed={service.image.fixed} className="card-img-top mx-auto" />
         <div className="card-body text-center">
           <h6>{service.title}</h6>
           <h6>${service.price}.</h6>
