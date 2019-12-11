@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
   color: black;
 }
 
-.showcase {
+.showcase, .contact {
   background-color: var(--mainGrey);
 }
 
@@ -91,6 +91,10 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   justify-content: center;
   background-color: var(--secondBrown);
+}
+
+.contact {
+  margin-bottom: -10px;
 }
 
 .footer {

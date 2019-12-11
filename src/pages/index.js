@@ -7,6 +7,7 @@ import BackgroundSection from "../components/globals/BackgroundSection";
 import Info from "../components/home/info";
 import Showcase from "../components/home/Showcase";
 import Services from "../components/home/Services";
+import Contact from "../components/home/Contact";
 
 
 
@@ -26,6 +27,7 @@ const IndexPage = ({ data }) => (
       <Info />
       <Showcase items={data.paintings} />
       <Services />
+      <Contact />
     </Layout>
   </div>
 )
