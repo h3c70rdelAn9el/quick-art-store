@@ -4,9 +4,9 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Art Scratch`,
+    description: ``,
+    author: `@h3c70r`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -16,6 +16,13 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
+    },
+    {
+      resolve: 'gatsby-plugin-snipcart',
+      options: {
+        apiKey: process.env.SNIPCART_API,
+        autopop: true
+      }
     },
     {
       resolve: `gatsby-source-contentful`,
