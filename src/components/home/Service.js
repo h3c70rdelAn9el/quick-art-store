@@ -16,7 +16,7 @@ export default function Service({ service }) {
               data-item-name = {service.title}
               data-item-price = {service.price}
               data-item-image = {service.image.fixed.src}
-              data-item-url = "https://loving-elion-114567.netlify.com/#!/"
+              data-item-url = "https://loving-elion-114567.netlify.com"
           >Purchase</button>
         </div>
       </div>
