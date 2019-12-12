@@ -4,7 +4,7 @@ import { Link, graphql, StaticQuery } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo";
 import BackgroundSection from "../components/globals/BackgroundSection";
-import Info from "../components/home/info";
+import Info from "../components/home/Info";
 import Showcase from "../components/home/Showcase";
 import Services from "../components/home/Services";
 import Contact from "../components/home/Contact";
